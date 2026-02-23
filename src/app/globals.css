@@ -1,26 +1,172 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* ASTRA Design System - Backgrounds */
+  --color-astra-bg-deep: #080812;
+  --color-astra-bg-primary: #12121f;
+  --color-astra-bg-card: #1a1a2e;
+  --color-astra-border: #2a2a4a;
+
+  /* ASTRA Design System - Text */
+  --color-astra-text-primary: #e8e8f0;
+  --color-astra-text-secondary: #9494b8;
+  --color-astra-text-muted: #6b6b8a;
+
+  /* ASTRA Design System - Accents */
+  --color-astra-accent: #00a87e;
+  --color-astra-accent-bright: #00d4aa;
+  --color-astra-cyan: #00b4d8;
+  --color-astra-gold: #ffd700;
+  --color-astra-purple: #8b5cf6;
+  --color-astra-orange: #f97316;
+
+  /* Rank Colors */
+  --color-rank-aprendiz: #94a3b8;
+  --color-rank-iniciado: #22c55e;
+  --color-rank-avanzado: #3b82f6;
+  --color-rank-experto: #a855f7;
+  --color-rank-maestro: #f59e0b;
+
+  /* League Colors */
+  --color-league-bronze: #cd7f32;
+  --color-league-silver: #c0c0c0;
+  --color-league-gold: #ffd700;
+
+  /* Animations */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-glow: pulseGlow 2s ease-in-out infinite;
+  --animate-twinkle: twinkle 3s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #080812;
+  --foreground: #e8e8f0;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  min-height: 100vh;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Mobile: disable hover transforms that cause sticky states on touch */
+@media (hover: none) {
+  .glass-card:hover {
+    transform: none;
+    border-color: rgba(42, 42, 74, 0.6);
+    box-shadow: none;
+  }
+}
+
+/* Keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 5px rgba(0, 168, 126, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(0, 168, 126, 0.4); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Glass effects */
+.glass {
+  background: rgba(26, 26, 46, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 168, 126, 0.1);
+}
+
+.glass-card {
+  background: rgba(26, 26, 46, 0.5);
+  border: 1px solid rgba(42, 42, 74, 0.6);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 168, 126, 0.3);
+  box-shadow: 0 0 30px rgba(0, 168, 126, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Gradient text */
+.gradient-text-astra {
+  background: linear-gradient(135deg, #00a87e 0%, #00b4d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-gold {
+  background: linear-gradient(135deg, #f59e0b 0%, #ffd700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effects */
+.glow-accent {
+  box-shadow: 0 0 20px rgba(0, 168, 126, 0.3);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.3);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+/* CTA button glow */
+.glow-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-button::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, #00a87e, #00b4d8);
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-button:hover::before {
+  opacity: 1;
+  filter: blur(8px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: rgba(18, 18, 31, 0.5); }
+::-webkit-scrollbar-thumb { background: rgba(0, 168, 126, 0.3); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0, 168, 126, 0.5); }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
