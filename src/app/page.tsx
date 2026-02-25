@@ -23,8 +23,8 @@ export default function Home() {
       <BenefitsSection />
       <HowItWorks />
       <EarningsShowcase />
-      <GamificationSection />
       <ToolsFeatures />
+      <GamificationSection />
       <FAQSection />
       <CTASection />
       <Footer />
