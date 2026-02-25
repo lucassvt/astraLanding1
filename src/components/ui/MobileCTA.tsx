@@ -31,7 +31,7 @@ export function MobileCTA() {
             href={REGISTER_URL}
             className="flex items-center justify-center gap-2 w-full py-3.5 text-base font-semibold rounded-xl bg-gradient-to-r from-astra-purple to-astra-cyan text-white active:scale-[0.98] transition-transform"
           >
-            Quiero ser Seller <ArrowRight className="w-5 h-5" />
+            Comenzá ahora! <ArrowRight className="w-5 h-5" />
           </a>
         </motion.div>
       )}

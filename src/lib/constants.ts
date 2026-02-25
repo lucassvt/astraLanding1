@@ -212,8 +212,8 @@ export const LEAGUES = [
 ] as const;
 
 export const NAV_LINKS = [
-  { label: 'Qué es ASTRA', href: '#que-es-astra' },
-  { label: 'Cómo funciona', href: '#como-funciona' },
+  { label: '¿Qué es ASTRA?', href: '#que-es-astra' },
+  { label: '¿Cómo funciona?', href: '#como-funciona' },
   { label: 'Ganancias', href: '#ganancias' },
   { label: 'Herramientas', href: '#herramientas' },
   { label: 'FAQ', href: '#faq' },
