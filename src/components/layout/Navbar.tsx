@@ -65,9 +65,9 @@ export function Navbar() {
             {/* Desktop CTA */}
             <a
               href={REGISTER_URL}
-              className="hidden md:inline-flex items-center px-5 py-2.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-astra-accent to-astra-cyan text-white hover:shadow-[0_0_20px_rgba(0,168,126,0.4)] transition-all"
+              className="hidden md:inline-flex items-center px-5 py-2.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-astra-purple to-astra-cyan text-white hover:shadow-[0_0_20px_rgba(90,79,207,0.4)] transition-all"
             >
-              Quiero ser Reseller
+              Quiero ser Seller
             </a>
 
             {/* Mobile hamburger */}
@@ -104,9 +104,9 @@ export function Navbar() {
               ))}
               <a
                 href={REGISTER_URL}
-                className="mt-4 inline-flex items-center justify-center px-6 py-4 text-base font-semibold rounded-xl bg-gradient-to-r from-astra-accent to-astra-cyan text-white min-h-[52px]"
+                className="mt-4 inline-flex items-center justify-center px-6 py-4 text-base font-semibold rounded-xl bg-gradient-to-r from-astra-purple to-astra-cyan text-white min-h-[52px]"
               >
-                Quiero ser Reseller
+                Quiero ser Seller
               </a>
             </div>
           </motion.div>

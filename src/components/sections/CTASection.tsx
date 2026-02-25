@@ -50,7 +50,7 @@ export function CTASection() {
 
             <motion.div variants={fadeInUp} className="mb-10">
               <GradientButton href={REGISTER_URL} size="lg">
-                Quiero ser Reseller <ArrowRight className="w-5 h-5" />
+                Quiero ser Seller <ArrowRight className="w-5 h-5" />
               </GradientButton>
             </motion.div>
 

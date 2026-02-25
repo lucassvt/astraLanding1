@@ -26,7 +26,7 @@ export function GradientButton({
 
   const variantClasses =
     variant === "primary"
-      ? "bg-gradient-to-r from-astra-accent to-astra-cyan text-white hover:shadow-[0_0_30px_rgba(0,168,126,0.4)] hover:-translate-y-0.5"
+      ? "bg-gradient-to-r from-astra-purple to-astra-cyan text-white hover:shadow-[0_0_30px_rgba(90,79,207,0.4)] hover:-translate-y-0.5"
       : "border border-astra-accent/40 text-astra-accent hover:bg-astra-accent/10 hover:border-astra-accent/60";
 
   const classes = `${baseClasses} ${variantClasses}`;

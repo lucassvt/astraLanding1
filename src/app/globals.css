@@ -105,7 +105,7 @@ body {
 
 /* Gradient text */
 .gradient-text-astra {
-  background: linear-gradient(135deg, #00a87e 0%, #00b4d8 100%);
+  background: linear-gradient(135deg, #5a4fcf 0%, #00b4d8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
