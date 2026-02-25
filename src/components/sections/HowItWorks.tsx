@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Package, Zap, Trophy } from "lucide-react";
+import { ClipboardList, Rocket, Zap } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RankCard } from "@/components/ui/RankCard";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
@@ -9,25 +9,25 @@ import { RANKS } from "@/lib/constants";
 
 const steps = [
   {
-    icon: Package,
+    icon: ClipboardList,
     number: "01",
-    title: "Conseguí tu Starter Pack",
+    title: "Registrate en el formulario",
     description:
-      "$100,000 en productos de alta rotación. Envío gratis a tu domicilio. También podés empezar con dropshipping.",
+      "Completá tus datos y elegí tu zona. Cargá tu foto y CBU para poder cobrar.",
+  },
+  {
+    icon: Rocket,
+    number: "02",
+    title: "Onboarding rápido",
+    description:
+      "Te mostramos cómo funciona ASTRA: Starter Pack/dropshipping, cómo sumar XP, usar el CRM y arrancar con tus primeras ventas.",
   },
   {
     icon: Zap,
-    number: "02",
-    title: "Vendé y ganá XP",
-    description:
-      "Cada $1,000 vendidos = 1 XP. Usá el CRM inteligente para fidelizar clientes y nunca perder una recompra.",
-  },
-  {
-    icon: Trophy,
     number: "03",
-    title: "Subí de rango, ganá más",
+    title: "¡Activáte y empezá a vender!",
     description:
-      "5 rangos con márgenes crecientes. Accesorios de 43% a 67% de ganancia. Logros, cajas y ligas competitivas.",
+      "Confirmamos tu alta y ya podés vender, sumar XP y desbloquear mejores márgenes.",
   },
 ];
 
@@ -111,7 +111,7 @@ export function HowItWorks() {
             variants={fadeInUp}
             className="text-center text-sm text-astra-text-muted mt-8"
           >
-            Factor de conversión: <span className="text-astra-accent font-medium">$1,000 vendidos = 1 XP</span> |
+            Factor de conversión: <span className="text-astra-accent font-medium">$1.000 vendidos = 1 XP</span> |
             Mark-up aplicado sobre el costo
           </motion.p>
         </motion.div>

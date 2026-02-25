@@ -4,13 +4,12 @@ import { useState } from "react";
 import { RANKS, AVG_TICKET } from "@/lib/constants";
 
 export function IncomeCalculator() {
-  const [salesPerWeek, setSalesPerWeek] = useState(10);
-  const [rankIndex, setRankIndex] = useState(0);
+  const [salesPerWeek, setSalesPerWeek] = useState(20);
+  const [rankIndex, setRankIndex] = useState(4);
 
   const rank = RANKS[rankIndex];
-  const weeklySales = salesPerWeek * AVG_TICKET;
   const monthlyIncome = Math.round(
-    salesPerWeek * 4.33 * rank.earningsPerSale
+    salesPerWeek * 4 * rank.earningsPerSale
   );
 
   return (
@@ -89,7 +88,7 @@ export function IncomeCalculator() {
         </p>
         <p className="text-xs text-astra-text-muted mt-2">
           Basado en ticket promedio de ${AVG_TICKET.toLocaleString("es-AR")} |
-          Mark-up promedio ~{rank.avgMarkup}% | {salesPerWeek} ventas/sem × 4.33 sem
+          Mark-up promedio ~{rank.avgMarkup}% | {salesPerWeek} ventas/sem × 4 sem
         </p>
       </div>
     </div>

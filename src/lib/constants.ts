@@ -126,22 +126,32 @@ export const FEATURES = [
   {
     icon: 'BarChart3',
     title: 'Dashboard Financiero',
-    description: 'Controlá tus KPIs en tiempo real. Ventas, márgenes, XP acumulado y proyecciones de ingreso.',
+    description: 'Ventas, margen y XP.',
   },
   {
     icon: 'CalendarClock',
-    title: 'CRM - Agenda de Recompra',
-    description: 'Sabé cuándo tu cliente necesita reponer. Notificaciones push automáticas para nunca perder una venta.',
+    title: 'CRM',
+    description: 'Avisos automáticos.',
   },
   {
     icon: 'BookOpen',
     title: 'Catálogo Inteligente',
-    description: 'Doble vista: modo vendedor con tus márgenes y modo cliente para compartir. Búsqueda rápida y filtros.',
+    description: 'Listo para compartir.',
   },
   {
     icon: 'GraduationCap',
     title: 'ASTRA Academy',
-    description: 'Módulos de capacitación para convertirte en experto. Técnicas de venta, productos y fidelización.',
+    description: 'Capacitaciones rápidas.',
+  },
+  {
+    icon: 'Target',
+    title: 'Objetivos y desafíos',
+    description: 'Metas simples para motivarte.',
+  },
+  {
+    icon: 'Gift',
+    title: 'Recompensas',
+    description: 'Completá metas y ganá cajas con productos reales.',
   },
 ] as const;
 
@@ -152,7 +162,7 @@ export const FAQS = [
   },
   {
     question: '¿Cuánto tengo que invertir para empezar?',
-    answer: 'El Starter Pack cuesta $100,000 e incluye productos de alta rotación listos para vender. No hay cuotas mensuales ni costos ocultos.',
+    answer: 'El Starter Pack cuesta $100.000 e incluye productos de alta rotación listos para vender. No hay cuotas mensuales ni costos ocultos.',
   },
   {
     question: '¿Cómo recibo los productos?',
@@ -164,11 +174,11 @@ export const FAQS = [
   },
   {
     question: '¿Puedo hacerlo part-time?',
-    answer: 'Sí. Con solo 10 ventas por semana podés generar entre $322,920 y $452,880 mensuales. Muchos de nuestros resellers combinan ASTRA con su trabajo principal.',
+    answer: 'Sí. Con solo 10 ventas por semana podés generar entre $322.920 y $452.880 mensuales. Muchos de nuestros resellers combinan ASTRA con su trabajo principal.',
   },
   {
     question: '¿Cuál es el pedido mínimo de reposición?',
-    answer: '$60,000 pesos. El envío a tu domicilio es siempre gratuito.',
+    answer: '$60.000 pesos. El envío a tu domicilio es siempre gratuito.',
   },
   {
     question: '¿Qué pasa si un producto tiene algún problema?',
@@ -176,7 +186,7 @@ export const FAQS = [
   },
   {
     question: '¿Cómo funciona el programa de referidos?',
-    answer: 'Por cada persona que referís y hace su primera compra, recibís $3,000 de crédito. Si llega al Nivel 2, $5,000 más. Con 5 referidos activos desbloqueás la insignia "Explorador de Talentos".',
+    answer: 'Por cada persona que referís y hace su primera compra, recibís $3.000 de crédito. Si llega al Nivel 2, $5.000 más. Con 5 referidos activos desbloqueás la insignia "Explorador de Talentos".',
   },
 ] as const;
 
@@ -190,13 +200,13 @@ export const LEAGUES = [
   {
     name: 'Plata',
     criterion: 'Nivel 3',
-    reward: 'Caja Épica + 1,000 XP',
+    reward: 'Caja Épica + 1.000 XP',
     color: '#c0c0c0',
   },
   {
     name: 'Oro',
     criterion: 'Nivel 4-5',
-    reward: 'Caja Legendaria + 2,000 XP + Insignia',
+    reward: 'Caja Legendaria + 2.000 XP + Insignia',
     color: '#ffd700',
   },
 ] as const;

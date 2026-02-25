@@ -7,6 +7,7 @@ import {
   CalendarClock,
   BookOpen,
   GraduationCap,
+  Target,
 } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
@@ -14,6 +15,7 @@ const iconMap: Record<string, React.ElementType> = {
   CalendarClock,
   BookOpen,
   GraduationCap,
+  Target,
 };
 
 interface FeatureCardProps {

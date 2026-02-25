@@ -24,6 +24,15 @@ const scenarios = [
     maxIncome: 905760,
     description: "Para quienes quieren hacer de ASTRA su actividad principal.",
   },
+  {
+    label: "Full-time",
+    detail: "30+ ventas/semana",
+    icon: DollarSign,
+    minIncome: 0,
+    maxIncome: 0,
+    customLabel: "+$1.000.000/mes",
+    description: "Máximo potencial. Superá el millón mensual con dedicación completa.",
+  },
 ];
 
 export function EarningsShowcase() {
@@ -42,13 +51,13 @@ export function EarningsShowcase() {
           <SectionHeading
             badge="Ganancias"
             title="¿Cuánto podés ganar?"
-            subtitle="Datos reales basados en más de 100,000 transacciones."
+            subtitle="Datos reales basados en más de 100.000 transacciones."
             gradient
           />
 
-          {/* Income cards */}
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-12">
-            {scenarios.map((s) => (
+          {/* Income cards — top row */}
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
+            {scenarios.filter((s) => !("customLabel" in s)).map((s) => (
               <motion.div
                 key={s.label}
                 variants={fadeInUp}
@@ -80,6 +89,28 @@ export function EarningsShowcase() {
             ))}
           </div>
 
+          {/* Full-time highlight — centered */}
+          <motion.div
+            variants={fadeInUp}
+            className="max-w-lg mx-auto p-6 md:p-8 rounded-2xl bg-astra-bg-card/50 border border-astra-accent/30 hover:border-astra-accent/50 transition-all text-center mb-8 sm:mb-12"
+          >
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-lg bg-astra-accent/10 flex items-center justify-center">
+                <DollarSign className="w-5 h-5 text-astra-accent" />
+              </div>
+              <div className="text-left">
+                <h3 className="font-bold text-astra-text-primary">Full-time</h3>
+                <p className="text-sm text-astra-text-muted">30+ ventas/semana</p>
+              </div>
+            </div>
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">
+              <span className="gradient-text-astra">+$1.000.000/mes</span>
+            </div>
+            <p className="text-sm text-astra-text-secondary mt-2">
+              Máximo potencial. Superá el millón mensual con dedicación completa.
+            </p>
+          </motion.div>
+
           {/* Interactive calculator */}
           <motion.div variants={fadeInUp}>
             <IncomeCalculator />
@@ -90,7 +121,7 @@ export function EarningsShowcase() {
             variants={fadeInUp}
             className="text-center text-sm text-astra-text-muted mt-8"
           >
-            Ticket promedio: $32,404 | Mix: 70% alimentos, 20% accesorios, 10% salud |
+            Ticket promedio: $32.404 | Mix: 70% alimentos, 20% accesorios, 10% salud |
             Rango del Nivel 1 al 5
           </motion.p>
         </motion.div>

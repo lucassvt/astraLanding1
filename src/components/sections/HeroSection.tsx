@@ -33,13 +33,6 @@ export function HeroSection() {
         animate="visible"
         className="relative z-10 max-w-5xl mx-auto px-5 sm:px-6 text-center"
       >
-        {/* Badge */}
-        <motion.div variants={item}>
-          <span className="inline-block px-3 py-1 mb-4 sm:mb-6 text-xs sm:text-sm font-medium rounded-full bg-astra-accent/10 text-astra-accent border border-astra-accent/20">
-            Carrera Comercial Gamificada
-          </span>
-        </motion.div>
-
         {/* Title */}
         <motion.h1
           variants={item}
@@ -62,7 +55,7 @@ export function HeroSection() {
         >
           Vendé productos para mascotas. Subí de nivel.{" "}
           <span className="text-astra-text-primary font-semibold">
-            Ganá hasta $905,760/mes.
+            Ganá hasta $905.760/mes.
           </span>
         </motion.p>
 
@@ -94,8 +87,8 @@ export function HeroSection() {
         >
           {[
             { value: "5 Rangos", label: "Para crecer" },
-            { value: "Hasta 67%", label: "Markup accesorios" },
-            { value: "22 Puntos", label: "De retiro" },
+            { value: "Hasta 70%", label: "Markup" },
+            { value: "22", label: "Puntos de retiro" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="text-lg sm:text-2xl font-bold text-astra-text-primary">

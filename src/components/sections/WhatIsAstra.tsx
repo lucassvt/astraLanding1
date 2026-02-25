@@ -43,20 +43,17 @@ export function WhatIsAstra() {
           <div>
             <SectionHeading
               badge="Sobre ASTRA"
-              title="Tu carrera como reseller, gamificada"
-              subtitle="Vendé productos para mascotas como en un videojuego: cada venta suma XP, subís de rango y desbloqueás mejores márgenes."
+              title="Tu carrera de seller"
+              subtitle="Vendé productos para mascotas y sumá XP. Subí de rango, desbloqueá beneficios y mejorá tus márgenes en cada nivel."
               centered={false}
             />
 
             <motion.div variants={fadeInUp} className="mb-8">
               <p className="text-astra-text-secondary leading-relaxed mb-4">
-                ASTRA es un programa de reventa de productos para mascotas
-                respaldado por una empresa con 22 sucursales, importaciones propias
-                y producción de marca propia.
+                ASTRA es un programa de reventa de productos para mascotas.
               </p>
               <p className="text-astra-accent font-semibold">
-                Acá no ganás plata por &quot;meter gente&quot;. Ganás plata vendiendo
-                productos.
+                Activá ingresos en tu tiempo libre
               </p>
             </motion.div>
 
