@@ -51,12 +51,19 @@ export function HeroSection() {
         {/* Subtitle */}
         <motion.p
           variants={item}
-          className="text-base sm:text-xl md:text-2xl text-astra-text-secondary max-w-3xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2"
+          className="text-base sm:text-xl md:text-2xl text-astra-text-secondary max-w-3xl mx-auto mb-4 sm:mb-5 leading-relaxed px-2"
         >
           Vendé productos para mascotas. Subí de nivel.{" "}
           <span className="text-astra-text-primary font-semibold">
             Ganá hasta $905.760/mes.
           </span>
+        </motion.p>
+
+        <motion.p
+          variants={item}
+          className="text-sm sm:text-base text-astra-purple/90 font-medium mb-8 sm:mb-10"
+        >
+          Emprendé en el mercado de las mascotas, el de mayor crecimiento.
         </motion.p>
 
         {/* CTAs */}
