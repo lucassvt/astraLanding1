@@ -19,12 +19,12 @@ export default function Home() {
       <StarParticlesWrapper />
       <Navbar />
       <HeroSection />
-      <WhatIsAstra />
-      <BenefitsSection />
-      <HowItWorks />
       <EarningsShowcase />
-      <ToolsFeatures />
+      <WhatIsAstra />
+      <HowItWorks />
       <GamificationSection />
+      <BenefitsSection />
+      <ToolsFeatures />
       <FAQSection />
       <CTASection />
       <Footer />
