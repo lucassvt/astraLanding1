@@ -157,32 +157,36 @@ export const FEATURES = [
 
 export const FAQS = [
   {
-    question: '¿Necesito experiencia previa en ventas?',
-    answer: 'No. ASTRA Academy te capacita desde cero con módulos paso a paso. Además, el CRM inteligente te guía sobre cuándo contactar a cada cliente.',
+    question: '¿Cuánto cuesta registrarse?',
+    answer: 'Registrarse en ASTRA es completamente gratis. Solo invertís cuando decidís hacer tu primer pedido de productos para vender.',
   },
   {
-    question: '¿Cuánto tengo que invertir para empezar?',
-    answer: 'El Starter Pack cuesta $100.000 e incluye productos de alta rotación listos para vender. No hay cuotas mensuales ni costos ocultos.',
+    question: '¿Tengo que comprar productos obligatoriamente para empezar?',
+    answer: 'No. Podés explorar el catálogo, conocer las herramientas y capacitarte antes de hacer tu primera compra. Cuando estés listo, el pedido mínimo es de $60.000.',
   },
   {
-    question: '¿Cómo recibo los productos?',
-    answer: 'Envío gratis a tu domicilio. También tenés 10 puntos de retiro y la opción de dropshipping: vos vendés, nosotros enviamos al cliente.',
+    question: '¿ASTRA es una estafa piramidal o un sistema multinivel?',
+    answer: 'No. En ASTRA ganás dinero vendiendo productos reales a clientes reales. No hay reclutamiento obligatorio, no hay niveles de comisiones por referidos y no necesitás sumar personas para ganar. Tu ingreso viene 100% de tus ventas.',
   },
   {
-    question: '¿Puedo hacerlo part-time?',
-    answer: 'Sí. Con solo 10 ventas por semana podés generar entre $322.920 y $452.880 mensuales. Muchos de nuestros resellers combinan ASTRA con su trabajo principal.',
+    question: '¿De dónde provienen mis ganancias?',
+    answer: 'Tus ganancias son la diferencia entre el precio de costo (que te da ASTRA) y el precio de venta al público. Según tu rango, el mark-up va del 29% al 70%, lo que significa que en cada venta te quedás con un margen real y transparente.',
   },
   {
-    question: '¿Cuál es el pedido mínimo de reposición?',
-    answer: '$60.000 pesos. El envío a tu domicilio es siempre gratuito.',
+    question: '¿ASTRA me garantiza un ingreso mínimo?',
+    answer: 'No. ASTRA te da las herramientas, los productos, la capacitación y el soporte, pero tus ingresos dependen de tu dedicación y tus ventas. Es un emprendimiento real: cuanto más vendés, más ganás.',
   },
   {
-    question: '¿Qué pasa si un producto tiene algún problema?',
-    answer: 'Tenés el respaldo de una empresa con 10 sucursales. Gestionamos cambios y garantías de forma directa dentro de las 72 horas.',
+    question: '¿Soy empleado de ASTRA?',
+    answer: 'No. Sos un seller independiente. No tenés horarios, no tenés jefe y decidís cuándo, cuánto y cómo vender. ASTRA es tu proveedor y tu plataforma de gestión.',
   },
   {
-    question: '¿Cómo funciona el programa de referidos?',
-    answer: 'Por cada persona que referís y hace su primera compra, recibís $3.000 de crédito. Si llega al Nivel 2, $5.000 más. Con 5 referidos activos desbloqueás la insignia "Explorador de Talentos".',
+    question: '¿Cuáles son los rangos y qué Mark-up ofrece cada uno?',
+    answer: 'ASTRA tiene 5 rangos: Aprendiz (29-43%), Iniciado (33-48%), Avanzado (38-55%), Experto (43-62%) y Maestro (50-70%). Subís de rango ganando XP con cada venta, desbloqueando mejores márgenes automáticamente.',
+  },
+  {
+    question: '¿Cuáles son las formas de vender con ASTRA?',
+    answer: 'Tenés dos modalidades: Stock propio (comprás los productos y los entregás vos, con mayor margen y control) y Dropshipping (vos vendés, ASTRA envía directo al cliente, ideal para empezar sin stock). Podés combinar ambas según te convenga.',
   },
 ] as const;
 
