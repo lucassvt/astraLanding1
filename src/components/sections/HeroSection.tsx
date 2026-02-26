@@ -95,7 +95,7 @@ export function HeroSection() {
           {[
             { value: "5 Rangos", label: "Para crecer" },
             { value: "Hasta 70%", label: "Markup" },
-            { value: "22", label: "Puntos de retiro" },
+            { value: "10", label: "Puntos de retiro" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="text-lg sm:text-2xl font-bold text-astra-text-primary">

@@ -166,11 +166,7 @@ export const FAQS = [
   },
   {
     question: '¿Cómo recibo los productos?',
-    answer: 'Envío gratis a tu domicilio. También tenés 22 puntos de retiro y la opción de dropshipping: vos vendés, nosotros enviamos al cliente.',
-  },
-  {
-    question: '¿Esto es un esquema piramidal?',
-    answer: 'No. Ganás dinero VENDIENDO productos, no reclutando personas. El programa de referidos es opcional y ofrece créditos como bonus, pero tu ingreso principal siempre viene de tus ventas directas.',
+    answer: 'Envío gratis a tu domicilio. También tenés 10 puntos de retiro y la opción de dropshipping: vos vendés, nosotros enviamos al cliente.',
   },
   {
     question: '¿Puedo hacerlo part-time?',
@@ -182,7 +178,7 @@ export const FAQS = [
   },
   {
     question: '¿Qué pasa si un producto tiene algún problema?',
-    answer: 'Tenés el respaldo de una empresa con 22 sucursales. Gestionamos cambios y garantías de forma directa dentro de las 72 horas.',
+    answer: 'Tenés el respaldo de una empresa con 10 sucursales. Gestionamos cambios y garantías de forma directa dentro de las 72 horas.',
   },
   {
     question: '¿Cómo funciona el programa de referidos?',
