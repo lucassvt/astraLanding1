@@ -1,27 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Rocket, Shield, TrendingUp } from "lucide-react";
+import { Rocket, Wallet, TrendingUp } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { staggerContainer, fadeInUp, fadeInRight } from "@/lib/animations";
-import { RANKS } from "@/lib/constants";
-import { Star } from "lucide-react";
+import { staggerContainer, fadeInUp } from "@/lib/animations";
 
-const bullets = [
+const mainBenefits = [
   {
     icon: Rocket,
     title: "Sin jefes, sin horarios",
-    description: "Vos ponés el ritmo. Vendé desde donde quieras, cuando quieras.",
+    description:
+      "Vos ponés el ritmo. Vendé desde donde quieras, cuando quieras.",
   },
   {
-    icon: Shield,
-    title: "Respaldo empresarial real",
-    description: "22 sucursales, importación propia y producción de marca propia.",
+    icon: Wallet,
+    title: "Cobrá rápido y con control",
+    description: "Elegí cuándo retirar tus ganancias.",
   },
   {
     icon: TrendingUp,
     title: "Márgenes crecientes",
-    description: "Del 29% al 48% en alimentos, del 43% al 67% en accesorios.",
+    description: "Rentabilidad real.",
   },
 ];
 
@@ -37,96 +36,52 @@ export function WhatIsAstra() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
-          className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center"
         >
-          {/* Text column */}
-          <div>
-            <SectionHeading
-              badge="Sobre ASTRA"
-              title="Tu carrera de seller"
-              subtitle="Vendé productos para mascotas y sumá XP. Subí de rango, desbloqueá beneficios y mejorá tus márgenes en cada nivel."
-              centered={false}
-            />
+          <SectionHeading
+            badge="Sobre ASTRA"
+            title="Tu carrera de seller"
+            subtitle="Vendé productos para mascotas y sumá XP. Subí de rango, desbloqueá beneficios y mejorá tus márgenes en cada nivel."
+          />
 
-            <motion.div variants={fadeInUp} className="mb-8">
-              <p className="text-astra-text-secondary leading-relaxed mb-4">
-                ASTRA es un programa de reventa de productos para mascotas.
-              </p>
-              <p className="text-astra-accent font-semibold">
-                Activá ingresos en tu tiempo libre
-              </p>
-            </motion.div>
+          <motion.div variants={fadeInUp} className="text-center mb-10 sm:mb-14">
+            <p className="text-astra-text-secondary leading-relaxed mb-2 max-w-2xl mx-auto">
+              ASTRA es un programa de reventa de productos para mascotas.
+            </p>
+            <p className="text-astra-accent font-semibold">
+              Activá ingresos en tu tiempo libre
+            </p>
+          </motion.div>
 
-            <motion.div variants={fadeInUp} className="space-y-4">
-              {bullets.map((b) => (
-                <div key={b.title} className="flex gap-4 items-start">
-                  <div className="w-10 h-10 rounded-lg bg-astra-accent/10 flex items-center justify-center shrink-0">
-                    <b.icon className="w-5 h-5 text-astra-accent" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-astra-text-primary">
-                      {b.title}
-                    </h3>
-                    <p className="text-sm text-astra-text-secondary">
-                      {b.description}
-                    </p>
-                  </div>
+          {/* 3 main benefits - Uber-style row */}
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 mb-10 sm:mb-14">
+            {mainBenefits.map((b) => (
+              <motion.div
+                key={b.title}
+                variants={fadeInUp}
+                className="text-center p-6 rounded-2xl bg-astra-bg-card/30 border border-astra-border/40 hover:border-astra-accent/30 transition-all hover:-translate-y-1"
+              >
+                <div className="w-14 h-14 rounded-xl bg-astra-accent/10 flex items-center justify-center mx-auto mb-4">
+                  <b.icon className="w-7 h-7 text-astra-accent" />
                 </div>
-              ))}
-            </motion.div>
+                <h3 className="text-lg font-bold text-astra-text-primary mb-2">
+                  {b.title}
+                </h3>
+                <p className="text-sm text-astra-text-secondary leading-relaxed">
+                  {b.description}
+                </p>
+              </motion.div>
+            ))}
           </div>
 
-          {/* Visual column - rank progression */}
-          <motion.div
-            variants={fadeInRight}
-            className="relative p-6 md:p-8 rounded-2xl bg-astra-bg-card/30 border border-astra-border/40"
-          >
-            <h3 className="text-sm font-medium text-astra-text-muted mb-6 uppercase tracking-wider">
-              Progresión de Rangos
-            </h3>
-            <div className="space-y-4">
-              {RANKS.map((rank, i) => (
-                <div key={rank.id} className="flex items-center gap-2 sm:gap-4">
-                  {/* Stars */}
-                  <div className="flex gap-0.5 w-14 sm:w-20 justify-end">
-                    {Array.from({ length: 5 }).map((_, si) => (
-                      <Star
-                        key={si}
-                        className="w-3 h-3"
-                        fill={si < rank.level ? rank.color : "transparent"}
-                        stroke={si < rank.level ? rank.color : "#2a2a4a"}
-                        strokeWidth={1.5}
-                      />
-                    ))}
-                  </div>
-                  {/* Name */}
-                  <span
-                    className="text-xs sm:text-sm font-semibold w-16 sm:w-24"
-                    style={{ color: rank.color }}
-                  >
-                    {rank.name}
-                  </span>
-                  {/* Progress bar */}
-                  <div className="flex-1 h-3 bg-astra-border/30 rounded-full overflow-hidden">
-                    <div
-                      className="h-full rounded-full transition-all duration-700"
-                      style={{
-                        width: `${20 + i * 20}%`,
-                        backgroundColor: rank.color,
-                        boxShadow: `0 0 8px ${rank.color}60`,
-                      }}
-                    />
-                  </div>
-                  {/* Markup */}
-                  <span className="text-xs text-astra-text-muted w-16 text-right">
-                    {rank.foodMarkup}-{rank.accessoryMarkup}%
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {/* Decorative glow */}
-            <div className="absolute -top-20 -right-20 w-40 h-40 bg-astra-accent/10 rounded-full blur-[80px]" />
+          {/* "Conocer más beneficios" link */}
+          <motion.div variants={fadeInUp} className="text-center">
+            <a
+              href="#beneficios"
+              className="inline-flex items-center gap-2 text-astra-accent font-semibold hover:underline transition-colors"
+            >
+              Conocer más beneficios
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </motion.div>
         </motion.div>
       </div>

@@ -4,7 +4,7 @@ import { WhatIsAstra } from "@/components/sections/WhatIsAstra";
 import { BenefitsSection } from "@/components/sections/BenefitsSection";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { EarningsShowcase } from "@/components/sections/EarningsShowcase";
-import { GamificationSection } from "@/components/sections/GamificationSection";
+import { CommunitySection } from "@/components/sections/CommunitySection";
 import { ToolsFeatures } from "@/components/sections/ToolsFeatures";
 
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -22,7 +22,7 @@ export default function Home() {
       <EarningsShowcase />
       <WhatIsAstra />
       <HowItWorks />
-      <GamificationSection />
+      <CommunitySection />
       <BenefitsSection />
       <ToolsFeatures />
       <FAQSection />

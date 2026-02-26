@@ -165,8 +165,8 @@ export const FAQS = [
     answer: 'No. Podés explorar el catálogo, conocer las herramientas y capacitarte antes de hacer tu primera compra. Cuando estés listo, el pedido mínimo es de $60.000.',
   },
   {
-    question: '¿ASTRA es una estafa piramidal o un sistema multinivel?',
-    answer: 'No. En ASTRA ganás dinero vendiendo productos reales a clientes reales. No hay reclutamiento obligatorio, no hay niveles de comisiones por referidos y no necesitás sumar personas para ganar. Tu ingreso viene 100% de tus ventas.',
+    question: '¿Cómo es el sistema ganancial de ASTRA?',
+    answer: 'En ASTRA ganás dinero vendiendo productos reales a clientes reales. No hay reclutamiento obligatorio, no hay niveles de comisiones por referidos y no necesitás sumar personas para ganar. Tu ingreso viene 100% de tus ventas.',
   },
   {
     question: '¿De dónde provienen mis ganancias?',

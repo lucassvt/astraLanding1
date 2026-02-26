@@ -11,9 +11,9 @@ const steps = [
   {
     icon: ClipboardList,
     number: "01",
-    title: "Registrate en el formulario",
+    title: "Crea tu cuenta",
     description:
-      "Completá tus datos y elegí tu zona. Cargá tu foto y CBU para poder cobrar.",
+      "Completá tus datos. Cargá tu foto y CBU para poder cobrar.",
   },
   {
     icon: Rocket,
