@@ -219,4 +219,4 @@ export const NAV_LINKS = [
   { label: 'FAQ', href: '#faq' },
 ] as const;
 
-export const REGISTER_URL = 'https://www.astrapet.com.ar/astra/register';
+export const REGISTER_URL = 'https://www.astrapet.com.ar/astra/login';
